@@ -1,6 +1,7 @@
 {
   "name": "pets_support",
   "version": "0.1.0",
+  "homepage": "https://webnovelty.github.io/pets_support",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.10.5",
@@ -44,7 +45,7 @@
     "eject": "react-scripts eject",
     "lint:js": "eslint src/**/*.{js,jsx}",
     "predeploy": "npm run build",
-    "deploy": "netlify deploy -p"
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -63,5 +64,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
   }
 }
